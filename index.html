@@ -1,0 +1,1331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Laboratory Furniture Solutions | Chameza Enterprises</title>
+    <meta name="description" content="Custom-designed laboratory furniture for research labs, educational institutions & healthcare facilities. Get a free quote today!">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <style>
+        /* Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        body {
+            line-height: 1.6;
+            color: #333;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        /* Header */
+        header {
+            background: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .logo {
+            height: 50px;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background-image: url("img/Laboratory Furniture 01.jpg"), url("img/6.jpg");
+            background-size: cover;
+            background-position: center;
+            
+           
+            padding: 100px 0;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+           
+        }
+        .hero p {
+            font-size: 1.3rem;
+            max-width: 700px;
+            margin: 0 auto 30px;
+            
+        }
+        
+        /* Button Styles */
+        .cta-button {
+            display: inline-block;
+            background: #0066cc;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: all 0.3s;
+            margin: 5px;
+        }
+        .cta-button:hover {
+            background: #0052a3;
+            transform: translateY(-2px);
+        }
+        .whatsapp-button {
+            background: #25D366;
+        }
+        .whatsapp-button:hover {
+            background: #1da851;
+        }
+        .call-button {
+            background: #ff6600;
+        }
+        .call-button:hover {
+            background: #e65c00;
+        }
+        .button-group {
+            margin-top: 20px;
+        }
+        
+        /* Features/Benefits */
+        .benefits {
+            padding: 60px 0;
+            background: #f9f9f9;
+        }
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .benefit-card {
+            background: white;
+            padding: 25px;
+            border-radius: 5px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .benefit-card:hover {
+            transform: translateY(-5px);
+        }
+        .benefit-icon {
+            font-size: 2.5rem;
+            color: #0066cc;
+            margin-bottom: 15px;
+        }
+        
+        /* Product Showcase */
+        .products {
+            padding: 60px 0;
+            background: url(about_2.jpg) center/cover fixed;
+            background-color: rgba(255,255,255,0.9);
+            background-blend-mode: overlay;
+        }
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #333;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .product-card {
+            border: 1px solid #eee;
+            border-radius: 5px;
+            overflow: hidden;
+            background: white;
+            transition: transform 0.3s;
+        }
+        .product-card:hover {
+            transform: scale(1.03);
+        }
+        .product-card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+        .product-info {
+            padding: 20px;
+        }
+        
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(rgba(0,102,204,0.9), rgba(0,102,204,0.9)), url('https://images.unsplash.com/photo-1581093057305-25a0a6b9ca0a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+        .cta-section h2 {
+            margin-bottom: 20px;
+            font-size: 2.2rem;
+        }
+
+
+        .benefits-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.benefit-card {
+  width: 18%; /* 5 cards per row on large screens */
+  min-width: 200px;
+  background: #fff;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+/* Responsive layout for tablets */
+@media (max-width: 1024px) {
+  .benefit-card {
+    width: 45%; /* 2 per row */
+  }
+}
+
+/* Responsive layout for mobile */
+@media (max-width: 600px) {
+  .benefit-card {
+    width: 90%; /* 1 per row */
+  }
+}
+
+        
+        /* Form Styles */
+        .contact-form {
+            background: white;
+            max-width: 500px;
+            margin: 40px auto 0;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+            font-weight: bold;
+        }
+        .form-group input, 
+        .form-group select, 
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+        .submit-btn {
+            background: #ff6600;
+            color: white;
+            border: none;
+            padding: 14px 25px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1.1rem;
+            width: 100%;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .submit-btn:hover {
+            background: #e65c00;
+        }
+        
+        /* Floating WhatsApp Button */
+        .floating-whatsapp {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #25D366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 60px;
+            font-size: 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            z-index: 99;
+            transition: all 0.3s;
+        }
+        .floating-whatsapp:hover {
+            transform: scale(1.1);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+        
+        /* Floating Call Button */
+        .floating-call {
+            position: fixed;
+            bottom: 100px;
+            right: 30px;
+            background: #0066cc;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 60px;
+            font-size: 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            z-index: 99;
+            transition: all 0.3s;
+        }
+        .floating-call:hover {
+            transform: scale(1.1);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+        
+        .logo-row {
+      display: flex;
+      animation: slideIn 30s linear infinite;
+    }
+
+    .logo-item {
+      margin-right: 30px;
+      opacity: 0;
+      animation: fadeIn 2s forwards;
+      animation-delay: 2s;
+    }
+
+    @keyframes slideIn {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+
+   
+
+
+    /* Grayscale effect on hover */
+    .logo-item img {
+      transition: all 0.3s ease;
+    }
+
+    .logo-item img:hover {
+      filter: grayscale(100%);
+    }
+
+    /* Change cursor to grey when hovering over image */
+    .logo-item img:hover {
+      cursor: url('https://www.svgrepo.com/show/342710/cursor.svg'), auto; /* Replace this URL with a grey cursor image */
+    }
+
+
+
+    .logo-row {
+      display: flex;
+      animation: slideIn 20s linear infinite;
+    }
+
+    .logo-item {
+      margin-right: 30px;
+      opacity: 0;
+      animation: fadeIn 2s forwards;
+      animation-delay: 2s;
+    }
+
+    .project-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+     /* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Main Gallery Section */
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Gallery Item Styling */
+.gallery-item {
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+/* Image Styling */
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effects for Images */
+.gallery-item img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .image-gallery {
+        grid-template-columns: 1fr; /* One column layout on small screens */
+    }
+}
+
+
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Section Styling */
+.product-section {
+    padding: 80px 20px;
+    background-color: #ffffff;
+}
+
+.section-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+/* Carousel Container */
+.carousel-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Carousel Items (Product Cards) */
+.carousel {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1200px;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Product Card Styling */
+.product-card {
+    min-width: 300px;
+    margin: 0 15px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: scale(1.05); /* Hover effect */
+}
+
+/* Product Image */
+.product-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+}
+
+.product-card:hover .product-img {
+    opacity: 0.8; /* Faded effect on hover */
+}
+
+/* Product Info */
+.product-info {
+    padding: 20px;
+}
+
+.product-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.product-description {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+/* Labels Styling */
+.labels {
+    margin-bottom: 20px;
+}
+
+.label {
+    display: inline-block;
+    font-size: 12px;
+    padding: 5px 10px;
+    margin-right: 10px;
+    border-radius: 20px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.bestseller {
+    background-color: #e74c3c;
+}
+
+.ce-certified {
+    background-color: #3498db;
+}
+
+.featured {
+    background-color: #f39c12;
+}
+
+.iso-certified {
+    background-color: #2ecc71;
+}
+
+.industrial {
+    background-color: #8e44ad;
+}
+
+.heavy-duty {
+    background-color: #1abc9c;
+}
+
+/* Button Styling */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}
+
+/* Carousel Navigation Buttons */
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 24px;
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 28px;
+    }
+
+    .carousel {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-card {
+        min-width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* Professional Header Styling */
+.premium-client-title {
+    font-size: 36px;              /* Larger font size for prominence */
+    font-weight: bold;            /* Bold for emphasis */
+    color: #2C3E50;               /* Dark color for professionalism */
+    text-align: center;           /* Center-align the title */
+    text-transform: uppercase;    /* All caps for emphasis */
+    letter-spacing: 2px;          /* Spacing between letters for a clean look */
+    margin-bottom: 30px;          /* Space below the title */
+    position: relative;           /* For adding effects */
+}
+
+/* Adding a subtle underline effect */
+.premium-client-title::after {
+    content: '';
+    position: absolute;
+    width: 80%;                    /* Make the underline narrower */
+    height: 3px;                   /* Thicker line */
+    background-color: #3498db;     /* Blue color for underline */
+    bottom: -10px;                 /* Position it just below the text */
+    left: 50%;
+    transform: translateX(-50%);   /* Center the underline */
+}
+
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Header Styling */
+.intro {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    border-radius: 8px;
+    margin-bottom: 40px;
+}
+
+.intro h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.intro .tagline {
+    font-size: 22px;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.intro .project-description {
+    font-size: 18px;
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.8;
+    color: #fff;
+}
+
+/* Main Gallery Section */
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Gallery Item Styling */
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Image Styling */
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: opacity 0.3s ease;
+}
+
+/* Image Overlay */
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Title and Description Text Styling */
+.image-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.image-description {
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    padding: 0 20px;
+}
+
+/* Show overlay on hover */
+.gallery-item:hover .image-overlay {
+    opacity: 1;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .image-gallery {
+        grid-template-columns: 1fr; /* One column layout on small screens */
+    }
+}
+
+
+
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Section Styling */
+.product-section {
+    padding: 80px 20px;
+    background-color: #ffffff;
+}
+
+.section-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+/* Product Card Styling */
+.product-card {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-10px); /* Hover effect */
+}
+
+/* Product Image */
+.product-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+}
+
+.product-card:hover .product-img {
+    opacity: 0.8; /* Faded effect on hover */
+}
+
+/* Product Info */
+.product-info {
+    padding: 20px;
+}
+
+.product-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.product-description {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+/* Labels Styling */
+.labels {
+    margin-bottom: 20px;
+}
+
+.label {
+    display: inline-block;
+    font-size: 12px;
+    padding: 5px 10px;
+    margin-right: 10px;
+    border-radius: 20px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.bestseller {
+    background-color: #e74c3c;
+}
+
+.ce-certified {
+    background-color: #3498db;
+}
+
+.featured {
+    background-color: #f39c12;
+}
+
+.iso-certified {
+    background-color: #2ecc71;
+}
+
+.industrial {
+    background-color: #8e44ad;
+}
+
+.heavy-duty {
+    background-color: #1abc9c;
+}
+
+/* Button Styling */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .product-card {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .product-section {
+        padding: 60px 20px;
+    }
+
+    .product-card {
+        margin-bottom: 30px;
+    }
+
+    .product-name {
+        font-size: 20px;
+    }
+
+    .product-description {
+        font-size: 14px;
+    }
+
+    .labels {
+        margin-bottom: 15px;
+    }
+
+    .btn {
+        font-size: 14px;
+    }
+}
+
+
+        /* Trust Indicators */
+        .trust-badges {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 30px;
+        }
+        .trust-badge {
+            height: 60px;
+            opacity: 0.8;
+            transition: opacity 0.3s;
+        }
+        .trust-badge:hover {
+            opacity: 1;
+        }
+        
+        /* Footer */
+        footer {
+            background: #333;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+        }
+        
+        
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .hero {
+                padding: 70px 0;
+                background-attachment: scroll;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .hero p {
+                font-size: 1rem;
+            }
+            .button-group {
+                display: flex;
+                flex-direction: column;
+            }
+            .cta-button {
+                margin: 5px 0;
+            }
+            .floating-whatsapp, .floating-call {
+                width: 50px;
+                height: 50px;
+                line-height: 50px;
+                font-size: 24px;
+                bottom: 20px;
+            }
+            .floating-call {
+                bottom: 80px;
+            }
+        }
+
+
+        
+
+
+       
+ </style>
+</head>
+<body>
+    <!-- Floating Action Buttons -->
+    <a href="https://wa.me/918591277251?text=I'm%20interested%20in%20your%20laboratory%20furniture" class="floating-whatsapp" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <a href="tel:+918591277251" class="floating-call">
+        <i class="fas fa-phone"></i>
+    </a>
+    
+    <header>
+        <div class="container">
+            <img src="img/logo1.jpg" alt="Company Logo" class="logo">
+        </div>
+    </header>
+    
+    <section class="hero">
+        <div class="container">
+            <div style="background-color: white; padding: 20px; border-radius: 8px; max-width: 800px; margin: 0 auto;">
+                <h1>Premium Laboratory SetUp </h1>
+                <p style="color:#000000;">
+                    Custom-designed, durable lab furniture for research facilities, educational institutions, and healthcare laboratories.
+                    ISO-certified manufacturing with 25+ years of industry experience.
+                </p>
+            </div>
+            <div class="button-group">
+                <a href="#contact" class="cta-button"><i class="fas fa-envelope"></i> Get Free Consultation</a>
+                <a href="https://wa.me/918591277251?text=I'm%20interested%20in%20your%20laboratory%20furniture" class="cta-button whatsapp-button" target="_blank"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
+                <a href="tel:+918591277251" class="cta-button call-button"><i class="fas fa-phone"></i> Call Now</a>
+            </div>
+        </div>
+    </section>
+    
+    <section class="benefits">
+        <div class="container">
+            <h2 class="section-title">Why Choose Our Laboratory Furniture?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div><img src="img/logo1.png" /></div>
+                    <h3>Top 5 Laboratory Design Inspiration 2023</h3>
+                </div>
+                <div class="benefit-card">
+                    <div><img src="img/logo2.png" /></div>
+                    <h3>Excellence in Laboratory Safety Award</h3>
+                </div>
+                <div class="benefit-card">
+                    <div><img src="img/logo3.png" /></div>
+                    <h3>Best Laboratory Equipment Award</h3>
+                </div>
+                <div class="benefit-card">
+                    <div><img src="img/logo4.png" /></div>
+                    <h3>Innovation in Laboratory Design Award</h3>
+                </div>
+                <div class="benefit-card">
+                    <div><img src="img/logo5.png" /></div>
+                    <h3>Sustainable Laboratory Award</h3>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    
+    <section class="products">
+        <div class="container">
+            <h2 class="section-title">Our Laboratory Furniture Products</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="img/funtuire.jpg" alt="Laboratory Workbenches">
+                    <div class="product-info">
+                        <h3>Lab Furniture</h3>
+                        <p>
+                            We are leading manufacturers and suppliers of high-quality laboratory furniture, designed for durability, safety, and efficiency. 
+                            Our modular lab furniture solutions are tailored to your space and scientific needs, ensuring comfort and functionality. 
+                            From lab tables to storage units, we deliver excellence with precision engineering and premium materials.
+                        </p>
+                        <a href="https://wa.me/918591277251?text=I'm%20interested%20in%20Lab%20Workbenches" class="cta-button whatsapp-button" style="display: inline-block; margin-top: 10px; padding: 8px 15px; font-size: 0.9rem;" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Enquire
+                        </a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="img/equipment.jpg" alt="Fume Hoods">
+                    <div class="product-info">
+                        <h3>Lab Equipment</h3>
+                        <p class="professional-description">
+                            Our laboratory equipment is built for accuracy, reliability, and long-term performance. We provide a wide range of advanced tools and instruments essential for modern labs. From fume hoods to biosafety cabinets, our products meet global standards, ensuring safe and efficient lab operations with every use.
+                        </p>
+                        
+                        <br>
+                        <a href="https://wa.me/918591277251?text=I'm%20interested%20in%20Fume%20Hoods" class="cta-button whatsapp-button" style="display: inline-block; margin-top: 10px; padding: 8px 15px; font-size: 0.9rem;" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Enquire
+                        </a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="img/lab setup.jpg" alt="Laboratory Storage">
+                    <div class="product-info">
+                        <h3>Lab Setup</h3>
+                        <p class="professional-description">
+                            We specialize in complete laboratory setup solutions—from design to execution. Our expert team plans and installs turnkey lab environments for research, education, pharmaceuticals, and more. With a focus on ergonomics, safety, and workflow, we transform your vision into a fully functional, state-of-the-art laboratory space.
+                        </p>
+                        <br>
+                        <a href="https://wa.me/918591277251?text=I'm%20interested%20in%20Lab%20Storage" class="cta-button whatsapp-button" style="display: inline-block; margin-top: 10px; padding: 8px 15px; font-size: 0.9rem;" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Enquire
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+    <section>
+
+
+        <h1 class="premium-client-title">Our Premium Clients</h1>
+<br>
+<br>
+    <div class="container my-5">
+        <div class="logo-row">
+          <!-- Add logos here as images -->
+          <div class="logo-item">
+            <img src="img/11.png" alt="Logo 1" class="img-fluid">
+          </div>
+          <div class="logo-item">
+            <img src="img/12.png" alt="Logo 2" class="img-fluid">
+          </div>
+          <div class="logo-item">
+            <img src="img/13.png" alt="Logo 3" class="img-fluid">
+          </div>
+          <div class="logo-item">
+            <img src="img/14.png" alt="Logo 4" class="img-fluid">
+          </div>
+          <div class="logo-item">
+            <img src="img/15.png" alt="Logo 5" class="img-fluid">
+          </div>
+          <div class="logo-item">
+            <img src="img/16.png" alt="Logo 6" class="img-fluid">
+          </div>
+
+          <div class="logo-item">
+            <img src="img/17.png" alt="Logo 1" class="img-fluid">
+          </div>
+          <div class="logo-item">
+            <img src="img/18.png" alt="Logo 2" class="img-fluid">
+          </div>
+          <div class="logo-item">
+            <img src="img/19.png" alt="Logo 3" class="img-fluid">
+          </div>
+          <div class="logo-item">
+            <img src="img/20.png" alt="Logo 4" class="img-fluid">
+          </div>
+          <div class="logo-item">
+            <img src="img/21.png" alt="Logo 5" class="img-fluid">
+          </div>
+          <div class="logo-item">
+            <img src="img/22.png" alt="Logo 6" class="img-fluid">
+          </div>
+
+          <div class="logo-item">
+            <img src="img/23.png" alt="Logo 1" class="img-fluid">
+          </div>
+          <div class="logo-item">
+            <img src="img/24.png" alt="Logo 2" class="img-fluid">
+          </div>
+          <div class="logo-item">
+            <img src="img/26.png" alt="Logo 3" class="img-fluid">
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+<br>
+<br>
+
+
+
+
+
+
+
+
+
+    <section class="intro">
+        <h1>Our Project</h1>
+        <p class="tagline">Innovative Solutions in Lab Equipment and Design</p>
+        <p class="project-description">
+            Our project focuses on creating a modern, highly efficient, and organized laboratory space
+            through innovative designs and cutting-edge equipment. We aim to provide a workspace that
+            promotes productivity, creativity, and safety for professionals in the scientific community.
+            Join us as we continue to push the boundaries of laboratory design and innovation.
+        </p>
+    </section>
+    
+    <!-- Main Container -->
+    <section class="image-gallery">
+        <div class="gallery-item">
+            <img src="img/New folder/11.jpeg" alt="Laboratory Equipment">
+            <div class="image-overlay">
+                <h3 class="image-title">Laboratory Equipment</h3>
+                <p class="image-description">State-of-the-art equipment for modern labs.</p>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="img/New folder/12.jpg" alt="Laboratory Workspace">
+            <div class="image-overlay">
+                <h3 class="image-title">Laboratory Workspace</h3>
+                <p class="image-description">Efficient design for optimal workflow.</p>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="img/New folder/13.jpg" alt="Lab Stools">
+            <div class="image-overlay">
+                <h3 class="image-title">Lab Stools</h3>
+                <p class="image-description">Comfortable and ergonomic seating.</p>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="img/New folder/14.jpg" alt="Laboratory Desk">
+            <div class="image-overlay">
+                <h3 class="image-title">Laboratory Desk</h3>
+                <p class="image-description">Spacious desks designed for productivity.</p>
+            </div>
+        </div>
+    </section>
+    
+    
+  
+    <section class="product-section">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">HIGH-QUALITY PRODUCTS WE MANUFACTURE</h2>
+            <div class="carousel-container">
+                <!-- Left Arrow -->
+                <button class="carousel-btn prev-btn">
+                    <i class="fa fa-chevron-left"></i>
+                </button>
+                
+                <!-- Carousel Items -->
+                <div class="carousel">
+                    <!-- Product 1: Laboratory Workstation -->
+                    <div class="product-card">
+                        <img src="img/27.jpeg" alt="Laboratory Workstation" class="product-img">
+                        <div class="product-info">
+                            <h4 class="product-name">Environmental Chamber</h4>
+                            <p class="product-description">An Environmental Chamber is a controlled environment used to simulate and maintain specific</p>
+                            <div class="labels">
+                                <span class="label bestseller">Bestseller</span>
+                                <span class="label ce-certified">CE Certified</span>
+                            </div>
+                            <button class="btn">Request Quote</button>
+                        </div>
+                    </div>
+    
+                    <!-- Product 2: Fume Hood Extraction System -->
+                    <div class="product-card">
+                        <img src="img/28.png" alt="Fume Hood Extraction System" class="product-img">
+                        <div class="product-info">
+                            <h4 class="product-name">Saftey cabinet system</h4>
+                            <p class="product-description">Advanced fume extraction systems with digital airflow monitoring and energy recovery technology.</p>
+                            <div class="labels">
+                                <span class="label featured">Featured</span>
+                                <span class="label iso-certified">ISO Certified</span>
+                            </div>
+                            <button class="btn">Request Quote</button>
+                        </div>
+                    </div>
+    
+                    <!-- Product 3: Clean Room System -->
+                    <div class="product-card">
+                        <img src="img/29.jpg" alt="Clean Room System" class="product-img">
+                        <div class="product-info">
+                            <h4 class="product-name">Modular Storage Solution</h4>
+                            <p class="product-description">Modular clean room environments with HEPA filtration and controlled airflow for pharmaceutical research facilities.</p>
+                            <div class="labels">
+                                <span class="label industrial">Industrial</span>
+                                <span class="label heavy-duty">Heavy Duty</span>
+                            </div>
+                            <button class="btn">Request Quote</button>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Right Arrow -->
+                <button class="carousel-btn next-btn">
+                    <i class="fa fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="cta-section" id="contact">
+        <div class="container">
+            <h2>Ready to Upgrade Your Laboratory?</h2>
+            <p>Get a free consultation and quote from our experts today.</p>
+            
+            <div class="contact-form">
+                <form action="/submit-form" method="POST">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="inquiry">Tell Us About Your Project</label>
+                        <textarea id="inquiry" name="inquiry" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn"><i class="fas fa-paper-plane"></i> Request Free Quote</button>
+                    
+                    <div style="text-align: center; margin-top: 20px; color: white;">
+                        <p>Or contact us directly:</p>
+                        <div style="display: flex; justify-content: center; gap: 15px; margin-top: 10px;">
+                            <a href="https://wa.me/918591277251?text=I'm%20interested%20in%20your%20laboratory%20furniture" class="cta-button whatsapp-button" style="padding: 10px 15px;" target="_blank">
+                                <i class="fab fa-whatsapp"></i> WhatsApp
+                            </a>
+                            <a href="tel:+918591277251" class="cta-button call-button" style="padding: 10px 15px;">
+                                <i class="fas fa-phone"></i> Call Now
+                            </a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            </section>
+    
+   
+</body>
+</html>   
